@@ -7,6 +7,8 @@
 @regfont: 'Lato', sans-serif;
 @skinnyfont: 'Raleway', sans-serif;
 
+@border: solid 2px #40361D;
+
 *{
 	margin: 0;
 	padding: 0;
@@ -22,7 +24,7 @@ body{
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
-	border-top: solid 2px @font;
+	border-top: @border;
 }
 
 h1{
@@ -35,4 +37,9 @@ h2{
 	font-family: @mainfont;
 	color: @font;
 	font-size: 64px;
+}
+
+#intro{
+	img{ border: @border; }
+
 }
