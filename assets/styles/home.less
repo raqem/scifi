@@ -3,13 +3,14 @@
 @background: #EDE3C8;
 @font: #40361D;
 @lightblue: #86A9BA;
+@darkblue: #2D383E;
 
 @thickfont: 'Russo One', sans-serif;
 @mainfont: 'Contrail One', cursive;
 @regfont: 'Lato', sans-serif;
 @skinnyfont: 'Raleway', sans-serif;
 
-@border: solid 2px #40361D;
+@border: solid 3px #40361D;
 
 *{
 	margin: 0;
@@ -20,37 +21,101 @@ body{
 	background-color: @background;
 	height: 100%;
 	width: 100%;
+	margin-top: 20px;
 }
 
 #container{
-	width: 70%;
+	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 	border-top: @border;
+	padding-top: 10px;
 }
 
+.navbar{
+	background-color: @background;
+	overflow: hidden;
+	width: 100%;
+
+	a{
+	float: left;
+	color: @font;
+	text-align: center;
+	border: @border;
+	width: 13%;
+	height: 40px;
+	padding: 2px;
+	font-size: 18px;
+	vertical-align: middle;
+	font-height: 20px;
+	font-family: @mainfont;
+	}
+
+	a:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	}
+}
 
 h2{
-	font-family: @mainfont;
+	font-family: @skinnyfont;
 	color: @font;
 	font-size: 64px;
 }
 
 
 .intro{
-	border-bottom: solid 2px #40361D;
-	width: 65%
-	height: 400px;
+	border-bottom: @border;
+	height: 350px;
+	width: 1100px;
+	display: table-cell;
 
-	img{ border: solid 2px #40361D;
+	img{ 
+	border: @border;
 	height: 300px;
 	width: 450px;
 	float: right;
-	display: inline-block;}
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 30px;
+	}
 
 	h1{
 	font-family: @thickfont;
 	color: @font;
-	font-size: 80px;}
+	font-size: 80px;
+	display: block;
+	}
 
 }
+
+#button1, #button2, #button3 {
+	float: left;
+	background-color: @background;
+	color: @font;
+	border: @border;
+	font-size: 16px;
+	font-family: @mainfont;
+	padding: 14px 40px;
+	text-align: center;
+	margin-left: 5%;
+	margin-top: 10px;
+	width: 23%;
+	transition-duration: 0.4s;
+
+}
+
+#button1:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	}
+
+#button2:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	}
+
+#button3:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	}
