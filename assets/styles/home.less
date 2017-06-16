@@ -25,7 +25,7 @@ body{
 }
 
 #container{
-	width: 60%;
+	width: 58%;
 	margin-left: auto;
 	margin-right: auto;
 	border-top: @border;
@@ -36,6 +36,7 @@ body{
 	background-color: @background;
 	overflow: hidden;
 	width: 100%;
+	margin-bottom: 1.5%;
 
 	a{
 	float: left;
@@ -49,6 +50,7 @@ body{
 	vertical-align: middle;
 	font-height: 20px;
 	font-family: @mainfont;
+	transition-duration: 0.3s;
 	}
 
 	a:hover{
@@ -61,13 +63,14 @@ h2{
 	font-family: @skinnyfont;
 	color: @font;
 	font-size: 64px;
+	padding-left: 15px;
 }
 
 
 .intro{
 	border-bottom: @border;
 	height: 350px;
-	width: 1100px;
+	width: 58%;
 	display: table-cell;
 
 	img{ 
@@ -75,16 +78,16 @@ h2{
 	height: 300px;
 	width: 450px;
 	float: right;
-	display: inline-block;
-	vertical-align: middle;
+	display: block;
 	margin-bottom: 30px;
+	vertical-align: middle;
 	}
 
 	h1{
 	font-family: @thickfont;
 	color: @font;
 	font-size: 80px;
-	display: block;
+	display: inline;
 	}
 
 }
@@ -100,7 +103,7 @@ h2{
 	text-align: center;
 	margin-left: 5%;
 	margin-top: 10px;
-	width: 23%;
+	width: 25%;
 	transition-duration: 0.4s;
 
 }
@@ -119,3 +122,53 @@ h2{
 	background-color: @darkblue;
 	color: @lightblue;
 	}
+
+.pictures{
+	margin-bottom: 25px;
+	height: 700px;
+
+
+ .cover {
+	width: 25%;
+	height:390px;
+	float:left;
+	margin-left: 5%;
+	margin-top: 1%;
+	background-color: @font;
+	margin-bottom: 10px;
+	box-shadow: 1px 5px 2px;
+ }
+
+ .if{
+	width: 25%;
+	height: 280px;
+	float:left;
+	margin-left: 5%;
+	margin-top: 1%;
+	background-color: @font;
+ }
+
+.underfont{
+	width: 25%;
+	height: 250px;
+	float:left;
+	margin-left: 5%;
+	margin-top: 1%;
+}
+ 
+  h3{
+   font-family: @thickfont;
+   color: @lightblue;
+   font-size: 32px;
+   text-align: center;
+
+ }
+
+  h4{
+   font-family: @thickfont;
+   color: @darkblue;
+   font-size: 20px;
+   text-align: center;
+  }
+
+}

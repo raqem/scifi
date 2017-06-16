@@ -1,0 +1,160 @@
+//Variables 
+
+@background: #EDE3C8;
+@font: #40361D;
+@lightblue: #86A9BA;
+@darkblue: #2D383E;
+
+@thickfont: 'Russo One', sans-serif;
+@mainfont: 'Contrail One', cursive;
+@regfont: 'Lato', sans-serif;
+@skinnyfont: 'Raleway', sans-serif;
+
+@border: solid 3px #40361D;
+@shadow: 1px 5px 2px;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: @background;
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#container{
+	width: 58%;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: @border;
+	padding-top: 10px;
+}
+
+.navbar{
+	background-color: @background;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 1.5%;
+
+	a{
+	float: left;
+	color: @font;
+	text-align: center;
+	border: @border;
+	width: 13%;
+	height: 40px;
+	padding: 2px;
+	font-size: 18px;
+	font-family: @mainfont;
+	transition-duration: 0.3s;
+	}
+
+	a:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	}
+}
+
+h2{
+	font-family: @skinnyfont;
+	color: @font;
+	font-size: 64px;
+	padding-left: 15px;
+}
+
+.title{
+	width: 550px;
+	height: 62px;
+	border-bottom: @border;
+	margin-left: 3%;
+
+	h2{
+	  text-align: center;
+	  font-size: 58px;
+	}
+}
+
+.book1{
+  
+   padding-top: 1.5%;
+
+    h3{
+    color: @font;
+    font-size: 26px;
+    font-family: @thickfont;
+    text-align: center;
+    }
+	
+
+	p{
+	color: @font;
+	width: 750px;
+	font-size: 18px;
+	padding-top: 1%;
+	text-align: right;
+	}
+
+	img{
+	float: right;
+	box-shadow: @shadow;
+	height: 520px;
+	width: 320px;
+
+	}
+}
+
+.book2{
+	 padding-top: 2%;
+
+    h3{
+    color: @font;
+    font-size: 26px;
+    font-family: @thickfont;
+    text-align: center;
+    }
+	
+
+	p{
+	color: @font;
+	width: 750px;
+	font-size: 18px;
+	padding-top: 1%;
+	text-align: left;
+	}
+
+	img{
+	float: left;
+	box-shadow: @shadow;
+	height: 520px;
+	width: 320px;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	margin-right: 1.5%;
+    }
+}
+
+#order{
+	font-family: @mainfont;
+	color: @font;
+	background-color: @lightblue;
+	font-size: 20px;
+	border: @border;
+	height: 50px;
+	width: 190px;
+	overflow: hidden;
+	padding: 10px 16px;
+	font-weight: 300;
+	margin-top: 1%;
+	transition-duration: 0.3s;
+
+}
+
+#order:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	border: solid 2px @lightblue;
+
+	}
