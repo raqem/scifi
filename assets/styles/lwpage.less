@@ -1,0 +1,67 @@
+//Variables 
+
+@background: #EDE3C8;
+@font: #40361D;
+@lightblue: #86A9BA;
+@darkblue: #2D383E;
+
+@thickfont: 'Russo One', sans-serif;
+@mainfont: 'Contrail One', cursive;
+@regfont: 'Lato', sans-serif;
+@skinnyfont: 'Raleway', sans-serif;
+
+@border: solid 3px #40361D;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: @background;
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#container{
+	width: 58%;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: @border;
+	padding-top: 10px;
+}
+
+.navbar{
+	background-color: @background;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 1.5%;
+
+	a{
+	float: left;
+	color: @font;
+	text-align: center;
+	border: @border;
+	width: 13%;
+	height: 40px;
+	padding: 2px;
+	font-size: 18px;
+	vertical-align: middle;
+	font-height: 20px;
+	font-family: @mainfont;
+	transition-duration: 0.3s;
+	}
+
+	a:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	}
+}
+
+h2{
+	font-family: @skinnyfont;
+	color: @font;
+	font-size: 64px;
+	padding-left: 15px;
+}
