@@ -1,0 +1,164 @@
+//Variables 
+
+@background: #EDE3C8;
+@font: #40361D;
+@lightblue: #86A9BA;
+@darkblue: #2D383E;
+
+@thickfont: 'Russo One', sans-serif;
+@mainfont: 'Contrail One', cursive;
+@regfont: 'Lato', sans-serif;
+@skinnyfont: 'Raleway', sans-serif;
+
+@border: solid 3px #40361D;
+@shadow: 1px 5px 2px;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: @background;
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#container{
+	width: 58%;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: @border;
+	padding-top: 10px;
+}
+
+.navbar{
+	background-color: @background;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 1.5%;
+
+	a{
+	float: left;
+	color: @font;
+	text-align: center;
+	border: @border;
+	width: 13%;
+	height: 40px;
+	padding: 2px;
+	font-size: 18px;
+	font-family: @mainfont;
+	transition-duration: 0.3s;
+	}
+
+	a:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	}
+}
+
+h2{
+	font-family: @skinnyfont;
+	color: @font;
+	font-size: 64px;
+	padding-left: 15px;
+}
+
+.twine{
+	width: 60%;
+	float: left;
+
+	h2{
+	font-family: @skinnyfont;
+	color: @font;
+	font-size: 55px;
+	padding-left: 15px;
+	}
+   
+    .game{
+    width: 80%;
+    height: 180px;
+    border: @border;
+    }
+
+    img{
+    width: 150px;
+    height: 150px;
+    border: @border;
+    box-shadow: none;
+    }
+
+    h4{
+    font-family: @mainfont;
+    color: @font;
+    font-size: 25px;
+    margin-top: 5px;
+
+    }
+
+    h5{
+    font-family: @mainfont;
+    color: @font;
+    font-size: 18px;
+    text-indent: 25px;
+    }
+
+    p{
+    font-family: @mainfont;
+    color: @font;
+    font-size: 14px;
+    text-indent: 15px;
+    margin-right: 10px;
+    }
+
+    a{
+    text-decoration: none;
+    }
+}
+
+.game:hover{
+	background-color: @lightblue;
+	border: solid 3px @darkblue;
+}
+
+h5:hover{
+	color: @darkblue;
+	font-size: 28px;
+}
+
+.mmbox{
+	margin-top: 40px;
+}
+
+.podcast{
+	float: right;
+	width: 30%;
+	margin-right: 5%;
+
+    h2{
+	font-family: @skinnyfont;
+	color: @font;
+	font-size: 55px;
+    }
+
+	img{
+	width: 280px;
+	height: 280px;
+	box-shadow: @shadow;
+	margin-left: 30px;
+	background-color: white;
+	}
+
+	p{
+	font-family: @mainfont;
+	color: @font;
+	font-size: 17px;
+	text-align: center;
+	margin-top: 300px;
+	}
+
+
+
+
+}
