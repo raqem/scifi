@@ -66,114 +66,122 @@ h2{
 	padding-left: 15px;
 }
 
-
 .intro{
+
 	border-bottom: @border;
 	height: 350px;
-	width: 58%;
-	display: table-cell;
 
-	img{ 
-	border: @border;
-	height: 300px;
-	width: 450px;
-	float: right;
-	display: block;
-	margin-bottom: 30px;
-	vertical-align: middle;
+	.words{
+		font-family: @thickfont;
+		color: @font;
+		font-size: 52px; 
+		margin-left: 2%;
+		margin-top: 2%;
+		float: left;
 	}
 
-	h1{
-	font-family: @thickfont;
-	color: @font;
-	font-size: 80px;
-	display: inline;
+	img{
+		border: @border;
+		margin-left: auto;
 	}
 
+	.authorpic{
+	    float: right;
+	    margin-top: 2%;
+	}
 }
 
-#button1, #button2, #button3 {
+.buttons{
+
+	width: 100%;
+
+	button{
+		font-family: @mainfont;
+		color: @font;
+		font-size: 20px;
+		width: 300px;
+		height: 60px;
+		border: @border;
+		padding: 10px 16px;
+		background-color: @background;
+		float: left;
+		margin-left: 5%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+
+	button:hover{
+		background-color: @darkblue;
+		border: solid 3px @lightblue;
+		color: @lightblue;
+	}
+}
+
+.line{
+	width: 300px;
 	float: left;
-	background-color: @background;
-	color: @font;
-	border: @border;
-	font-size: 16px;
-	font-family: @mainfont;
-	padding: 14px 40px;
-	text-align: center;
 	margin-left: 5%;
-	margin-top: 10px;
-	width: 25%;
-	transition-duration: 0.4s;
-
+	margin-bottom: 2%;
+	border-top: @border;
 }
-
-#button1:hover{
-	background-color: @darkblue;
-	color: @lightblue;
-	}
-
-#button2:hover{
-	background-color: @darkblue;
-	color: @lightblue;
-	}
-
-#button3:hover{
-	background-color: @darkblue;
-	color: @lightblue;
-	}
 
 .pictures{
-	margin-bottom: 25px;
-	height: 700px;
 
+	.covers{
+		width: 300px;
+		float: left;
+		margin-left: 5%;
+		box-shadow: @shadow;
+		height: 450px;
 
- .cover {
-	width: 25%;
-	height:390px;
-	float:left;
-	margin-left: 5%;
-	margin-top: 1%;
-	background-color: @font;
-	margin-bottom: 10px;
-	box-shadow: 1px 5px 2px;
-
-	a{
-		text-decoration: none;
-		color: none;
 	}
- }
 
- .if{
-	width: 25%;
-	height: 280px;
-	float:left;
-	margin-left: 5%;
-	margin-top: 1%;
-	background-color: @font;
- }
+	.daddy{
+		border: @border;
+		width: 300px;
+		float: left;
+		margin-left: 5%;
+		height: 420px;
 
-.underfont{
-	width: 25%;
-	height: 250px;
-	float:left;
-	margin-left: 5%;
-	margin-top: 1%;
+	}
 }
- 
-  h3{
-   font-family: @thickfont;
-   color: @lightblue;
-   font-size: 32px;
-   text-align: center;
 
- }
+.row3{
+	width: 100%;
+	clear: both;
+}
 
-  h4{
-   font-family: @thickfont;
-   color: @darkblue;
-   font-size: 20px;
-   text-align: center;
-  }
+.underfont1, .underfont2, .underfont3 {
+	width: 300px;
+	float: left;
+	margin-left: 5%;
+	text-align: center;
+	margin-bottom: 5%;
 
+	h3{
+		color: @lightblue;
+		font-family: @mainfont;
+		font-size: 32px;
+
+	}
+
+	h4{
+		color: @darkblue;
+		font-size: 28px;
+		font-family: @mainfont;
+	}
+
+	p{
+		color: @font;
+		font-size: 18px;
+		font-family: @mainfont;
+	}
+}
+
+.underfont1, .underfont3{
+	margin-top: 2%;
+}
+
+.underfont2{
+	margin-top: 0%;
 }
