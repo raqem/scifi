@@ -8,7 +8,7 @@
 @thickfont: 'Russo One', sans-serif;
 @mainfont: 'Contrail One', cursive;
 @regfont: 'Lato', sans-serif;
-@skinnyfont: 'Raleway', sans-serif;
+@skinnyfont: 'Mate', serif;
 
 @border: solid 3px #40361D;
 
@@ -30,6 +30,20 @@ body{
 	margin-right: auto;
 	border-top: @border;
 	padding-top: 10px;
+}
+.social{
+
+	img{
+	height: 30px;
+	width: 30px;
+	float: right;
+	margin: 0 5px;
+	background-color: @font; 
+	}
+
+	img:hover{
+	background-color: @darkblue;
+	}
 }
 
 .navbar{
@@ -64,6 +78,23 @@ h2{
 	color: @font;
 	font-size: 64px;
 	padding-left: 15px;
+}
+
+.bigsocial{
+	float: left;
+	clear: both;
+	margin: 20px 5px 0px 55px;
+
+	img{
+	height: 90px;
+	width: 90px;
+	margin: 0 10px;
+	background-color: @font; 
+	}
+
+	img:hover{
+	background-color: @darkblue;
+	}
 }
 
 #form-wrap{
@@ -126,6 +157,7 @@ h2{
     background-color: @darkblue;
     color: @lightblue;
     border: solid 3px @lightblue;
+    cursor: pointer;
     }
 
 }

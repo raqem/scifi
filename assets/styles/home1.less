@@ -1,0 +1,187 @@
+//Variables 
+
+@background: #EDE3C8;
+@font: #40361D;
+@lightblue: #86A9BA;
+@darkblue: #2D383E;
+
+@thickfont: 'Russo One', sans-serif;
+@mainfont: 'Contrail One', cursive;
+@regfont: 'Lato', sans-serif;
+@skinnyfont: 'Raleway', sans-serif;
+
+@border: solid 3px #40361D;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: @background;
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#container{
+	width: 58%;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: @border;
+	padding-top: 10px;
+}
+
+.navbar{
+	background-color: @background;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 1.5%;
+
+	a{
+	float: left;
+	color: @font;
+	text-align: center;
+	border: @border;
+	width: 13%;
+	height: 40px;
+	padding: 2px;
+	font-size: 18px;
+	vertical-align: middle;
+	font-height: 20px;
+	font-family: @mainfont;
+	transition-duration: 0.3s;
+	}
+
+	a:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	}
+}
+
+h2{
+	font-family: @skinnyfont;
+	color: @font;
+	font-size: 64px;
+	padding-left: 15px;
+}
+
+
+.intro{
+	border-bottom: @border;
+	height: 250px;
+	width: 58%;
+
+	h1{
+	font-family: @thickfont;
+	color: @font;
+	font-size: 80px;
+	}
+
+}
+
+.pic{ 
+	
+
+	img{
+	border: @border;
+	height: 300px;
+	width: 450px;
+	float: right;
+	margin-bottom: 30px;
+	box-shadow: none;
+	}
+}
+
+#button1, #button2, #button3 {
+	float: left;
+	background-color: @background;
+	color: @font;
+	border: @border;
+	font-size: 16px;
+	font-family: @mainfont;
+	padding: 14px 40px;
+	text-align: center;
+	margin-left: 5%;
+	margin-top: 10px;
+	width: 25%;
+	transition-duration: 0.4s;
+
+}
+
+#button1:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	}
+
+#button2:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	}
+
+#button3:hover{
+	background-color: @darkblue;
+	color: @lightblue;
+	}
+
+.pictures{
+	margin-bottom: 25px;
+	height: 700px;
+
+
+ .cover {
+	width: 25%;
+	height:390px;
+	float: left;
+	margin-left: 5%;
+	margin-top: 1%;
+	background-color: @font;
+	margin-bottom: 10px;
+	box-shadow: 1px 5px 2px;
+
+ }
+
+ .cover2{
+ 	margin-left: 3%;
+ 	width: 25%;
+	height:390px;
+	float: left;
+	margin-top: 1%;
+	background-color: @font;
+	margin-bottom: 10px;
+	box-shadow: 1px 5px 2px;
+ }
+
+ .if{
+	width: 25%;
+	height: 280px;
+	float: left;
+	margin-left: 3%;
+	margin-top: 1%;
+	background-color: @font;
+ }
+
+.underfont{
+	width: 25%;
+	height: 250px;
+	float: left;
+	margin-left: 5%;
+	margin-top: 1%;
+}
+ 
+  h3{
+   font-family: @thickfont;
+   color: @lightblue;
+   font-size: 32px;
+   text-align: center;
+
+ }
+
+  h4{
+   font-family: @thickfont;
+   color: @darkblue;
+   font-size: 20px;
+   text-align: center;
+  }
+
+}

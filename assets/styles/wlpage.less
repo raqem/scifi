@@ -8,7 +8,7 @@
 @thickfont: 'Russo One', sans-serif;
 @mainfont: 'Contrail One', cursive;
 @regfont: 'Lato', sans-serif;
-@skinnyfont: 'Raleway', sans-serif;
+@skinnyfont: 'Mate', serif;
 
 @border: solid 3px #40361D;
 
@@ -30,6 +30,20 @@ body{
 	margin-right: auto;
 	border-top: @border;
 	padding-top: 10px;
+}
+.social{
+
+	img{
+	height: 30px;
+	width: 30px;
+	float: right;
+	margin: 0 5px;
+	background-color: @font; 
+	}
+
+	img:hover{
+	background-color: @darkblue;
+	}
 }
 
 .navbar{
@@ -75,7 +89,7 @@ h2{
 
 
     h1{
-	font-family: @thickfont;
+	font-family: @skinnyfont;
 	color: @font;
 	font-size: 55px;
 	text-align: center;
